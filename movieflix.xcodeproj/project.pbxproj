@@ -15,6 +15,7 @@
 		77F7773827A58E0D00580C9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77F7773627A58E0D00580C9B /* LaunchScreen.storyboard */; };
 		77F7774027A594A100580C9B /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F7773F27A594A100580C9B /* MovieCell.swift */; };
 		A48CE46627B3428D00B23FC1 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = A48CE46527B3428D00B23FC1 /* AlamofireImage */; };
+		A48CE46827B3501200B23FC1 /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48CE46727B3501200B23FC1 /* MovieDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		77F7773727A58E0D00580C9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		77F7773927A58E0D00580C9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77F7773F27A594A100580C9B /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		A48CE46727B3501200B23FC1 /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				77F7773627A58E0D00580C9B /* LaunchScreen.storyboard */,
 				77F7773927A58E0D00580C9B /* Info.plist */,
 				77F7773F27A594A100580C9B /* MovieCell.swift */,
+				A48CE46727B3501200B23FC1 /* MovieDetailsViewController.swift */,
 			);
 			path = movieflix;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A48CE46827B3501200B23FC1 /* MovieDetailsViewController.swift in Sources */,
 				77F7773027A58E0900580C9B /* MoviesViewController.swift in Sources */,
 				77F7772C27A58E0900580C9B /* AppDelegate.swift in Sources */,
 				77F7774027A594A100580C9B /* MovieCell.swift in Sources */,

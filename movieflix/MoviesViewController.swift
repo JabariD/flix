@@ -33,14 +33,10 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
              } else if let data = data {
                     let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
                  
-                    print(dataDictionary)
                     self.movies = dataDictionary["results"] as! [[String:Any]]
                  
                     self.tableView.reloadData() // calls the functions again
 
-                    // TODO: Get the array of movies
-                    // TODO: Store the movies in a property to use elsewhere
-                    // TODO: Reload your table view data
 
              }
         }
@@ -72,6 +68,29 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         cell.posterView.af.setImage(withURL: posterUrl!)
         
         return cell
+    }
+    
+    // Do preparation before navigation...
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print("Loading up the details screen...")
+        
+        // Sender is the cell that was tapped on...
+        
+        // Find the selected movie
+        let cell = sender as! UITableViewCell
+        let indexPath = tableView.indexPath(for: cell)!
+        let movie = movies[indexPath.row]
+        
+        
+        // Pass the selected movie to MovieDetailsViewController
+        
+        // segue knows where it is going...
+        let detailsViewController = segue.destination as! MovieDetailsViewController
+        
+        detailsViewController.movie = movie
+        
+        // Unhighlight after selecting
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 
 
